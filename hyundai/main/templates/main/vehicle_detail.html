@@ -1,0 +1,13 @@
+{% extends "main/index.html" %}
+
+{% block content %}
+    <div class="container mx-auto">
+        <div class="p-7 mx-auto w-2/3">
+            <h1 class="text-center text-2xl font-bold">{{ vehicle.name }}</h1>
+            <img class="mx-auto" src="{{ vehicle.image_url }}" alt="">
+            <div class="text-center">
+                {{ vehicle.description |safe }}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
